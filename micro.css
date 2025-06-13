@@ -1,0 +1,290 @@
+/* micro.css */
+
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff0f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffe6eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo_container img {
+  height: 120px;
+  object-fit: contain;
+}
+
+.nav_bar a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #a60042;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav_bar a:hover {
+  color: #ff007b;
+}
+
+/* Search Bar */
+.search_bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search_input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  width: 200px;
+}
+
+/* Action Bar */
+.action_bar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.action_container {
+  text-align: center;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.action_container:hover {
+  transform: translateY(-3px);
+  color: #a60042;
+}
+
+.action_icon {
+  font-size: 24px;
+}
+
+/* Banner */
+.banner_container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner_image {
+  width: 100%;
+  object-fit: cover;
+  max-height: 80vh;
+}
+
+/* Category Heading */
+.category_heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: #a60042;
+}
+
+/* Products Grid */
+.category_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 4rem;
+}
+
+.product_card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.product_card:hover {
+  transform: scale(1.03);
+}
+
+.sale_items {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.price_tag {
+  position: absolute;
+  bottom: 45px;
+  left: 1rem;
+  background: #a60042;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.offer_tag {
+  position: absolute;
+  bottom: 10px;
+  left: 1rem;
+  background: #ffb3c6;
+  color: #a60042;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Tagline Marquee */
+.tagline-wrapper {
+  margin: 3rem 0;
+  overflow: hidden;
+  background-color: #fff0f3;
+}
+
+.tagline-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  margin-right: 3rem;
+  color: #a60042;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #ffe6eb;
+  padding: 2rem;
+  color: #333;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_column {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem 0;
+}
+
+.footer_column h3 {
+  margin-bottom: 1rem;
+  color: #a60042;
+}
+
+.footer_column a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer_column a:hover {
+  color: #ff007b;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.video_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5%;
+  background-color: #ffe1eb; 
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video_content_left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video_content_left h2 {
+  font-size: 2.2rem;
+  color: #c2185b; 
+  margin-bottom: 15px;
+}
+
+.video_content_left p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.shop_now_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c2185b;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.shop_now_btn:hover {
+  background-color: #9a1147;
+}
+
+.video_content_right {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.styled_video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
